@@ -1,27 +1,28 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: 'ムスタヒド　アハメド',
+  title: '機械学習エンジニア',
   facts: {
-    'Residence': 'London',
-    'Homepage': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <span class="print">https://en.wikipedia.org/wiki/William_Shakespeare</span>
-                  <span class="screen">wiki</span>
+    '住所': '練馬区、東京都',
+    '国籍': 'バングラデシュ',
+    'Git Profile': `<a href="https://github.com/ahmedmustahid">
+                  <span class="print">https://github.com/ahmedmustahid</span>
+                  <span class="screen">Github</span>
                 </a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com">wil64@yahoo.com</a>'
+    'Email': '<a href="mailto:amustahid25@gmail.com">amustahid25@gmail.com</a>'
   },
   skills: [
-    ['Comedy', '++++'],
-    ['Love', '++++'],
-    ['Theater', '++++'],
-    ['Tragedy', '++++'],
-    ['Poetry', '++++'],
-    ['Erotic', '+++'],
-    ['Sonnets', '++++'],
-    ['Plays', '++++'],
-    ['Writing', '++++'],
-    ['Directing', '+++'],
-    ['Literature', '++++'],
-    ['Influence', '++++'],
+    ['Python', '++++'],
+    ['C++17', '++++'],
+    ['C', '++++'],
+    ['Dart/Flutter', '++++'],
+    ['Swift', '++++'],
+    ['Azure', '+++'],
+    ['AWS', '++++'],
+    ['統計学', '++++'],
+    ['画像解析', '++++'],
+    ['自然言語処理', '+++'],
+    ['アルゴリズム', '++++'],
+    ['データ構造', '++++'],
   ],
   plays: [
     {
