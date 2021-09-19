@@ -1,69 +1,106 @@
 module.exports = {
-  name: 'ムスタヒド　アハメド',
-  title: '機械学習エンジニア',
+  name: 'Mustahid Ahmed',
+  title: '',
   facts: {
-    '住所': '練馬区、東京都',
-    '国籍': 'バングラデシュ',
+    'Residence': 'Tokyo, Japan',
+    'Nationality': 'Bangladesh',
     'Git Profile': `<a href="https://github.com/ahmedmustahid">
                   <span class="print">https://github.com/ahmedmustahid</span>
                   <span class="screen">Github</span>
                 </a>`,
-    'Email': '<a href="mailto:amustahid25@gmail.com">amustahid25@gmail.com</a>'
+    'Email': '<a href="mailto:amustahid25@gmail.com">amustahid25@gmail.com</a>',
   },
   skills: [
     ['Python', '++++'],
     ['C++17', '++++'],
     ['C', '++++'],
     ['Dart/Flutter', '++++'],
-    ['Swift', '++++'],
+    ['Swift', '+++'],
     ['Azure', '+++'],
     ['AWS', '++++'],
-    ['統計学', '++++'],
-    ['画像解析', '++++'],
-    ['自然言語処理', '+++'],
-    ['アルゴリズム', '++++'],
-    ['データ構造', '++++'],
+    ['Statistics', '++++'],
+    ['Image Processing', '++++'],
+    ['NLP', '+++'],
+    ['Algorithms', '++++'],
+    ['Data Structure', '++++'],
   ],
-  plays: [
+  projects: [
     {
-      title: 'Hamlet',
-      written: 'Likely early 17th century',
-      badges: ['tragedy', 'philosophy', 'death'],
+      title: 'NLP based Chatbot',
+      written: 'June 2021 - Present',
+      badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
-Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether it is right for him to take revenge, Hamlet, along with almost all the other major characters, is killed.
-`
+
+      Model deployment, system design and maintenance using AWS Amplify, AWS Api Gateway, AWS Lambda, AWS Sagemaker.
+      Front and backend development using Flutter/Dart/Swift programming languages.
+      `
     },
     {
-      title: 'Twelfth Night',
-      written: '1600 – 1601',
-      badges: ['comedy', 'love'],
+      title: 'Database design and deployment',
+      written: 'March 2021 – May 2021',
+      badges: ['MySQL', 'Azure', 'Python', 'Git'],
       contents: `
-Viola finds herself shipwrecked in Illyria and, assuming that her brother Sebastian has died in the wreck, disguises herself as a man to gain a position in Duke Orsino's court. Orsino sends Viola (whom he knows as Cesario) to deliver a message to his love, Olivia. Olivia, however, dislikes the Duke. She falls in love with Viola, who she thinks is a man. Eventually, Viola's brother Sebastian, who in fact was unharmed in the wreck, reappears. At a critical moment, Viola's true identity is revealed when members of the court notice the similarities between her and Sebastian. Olivia quickly falls in love with Sebastian, and Viola confesses her love for the Duke.
-`
+
+      Designed MySQL database schema and deployed it in Azure. 
+      Using web application API to connect web app with the database.
+      `
+    },
+{
+      title: 'Supply Chain Optimization',
+      written: 'December 2020 - February 2021',
+      badges: ['Python', 'C++', 'Git'],
+
+      contents: `
+
+      Research on optimization problems. 
+      Using linear programming and integer programming methodologies in Gurobi Python and C++ for supply chain optimization.      `
     },
     {
-      title: 'The Tragedy of Romeo and Juliet',
-      written: '1595–1596, with a possible early draft written in 1591',
-      badges: ['tragedy', 'death', 'love'],
+      title: 'Video Anomaly Detection',
+      written: 'May 2020 - November 2020 ',
+      badges: ['Python', 'OpenCV', 'PyTorch', 'MySQL', 'Azure', 'Docker', 'Git'],
       contents: `
-In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
-`
+
+      Research on deep learning based activity detection algorithms.
+      Constructing and deploying algorithm to detect anomalous events in video.
+      Transferring the analysis data to Azure DB deployed in cloud.      `
     }
   ],
-  experience: [
-    {
-      header: 'Performance',
-      skills: ['theater', 'play'],
+  additional_experience: [
+    { 
+      header: 'Masters Thesis：Machine Learning, Deep Learning, Data Analysis',
+      skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git', 'CMake'],
       contents: `
-Thousands of performances of my plays have been staged since the end of the 16th century. Many of my greatest plays were performed by the Lord Chamberlain's Men and King's Men acting companies at the [Globe](https://en.wikipedia.org/wiki/Globe_Theatre) and Blackfriars Theatres.
-`
+
+      Simulation of particle collisions and their reaction in particle detectors using C++.
+      Desiging particle detectors using C++ framework.
+      Analyzing data read by particle detectors using machine learning and deep learning algorithms.
+      `
     },
-    {
-      header: 'Poetry',
-      skills: ['poetry', 'erotic'],
+
+    { 
+      header: 'Conference Presentation: Japan Physical Society Annual Meeting',
       contents: `
-In 1593 and 1594, when the theatres were closed because of plague, I published two narrative poems on sexual themes, Venus and Adonis and The Rape of Lucrece. He dedicated them to Henry Wriothesley, Earl of Southampton.
-`
-    }
-  ]
+      Full Detector Simulation of Pair Monitor and Application of Machine Learning to Determine Determine Beam Size
+      Nagoya University, Nagoya, Japan [March ’20]
+      `
+    },
+    { 
+      header: 'Conference Presentation：International Workshop on Future Linear Colliders',
+      contents: `
+      Search for weakly interacting dark matter in the International Linear Collider
+      University of Texas, Arlington, Texas, USA. [Oct ’18]
+      `
+    },
+  ],
+
+  languages: [  
+    {
+      contents: `
+      English, Business Level, TOEFL iBT 110
+      Japanese: Business Level
+      `
+    },
+  ],
+
 };

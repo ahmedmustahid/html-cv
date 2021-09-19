@@ -15,11 +15,11 @@
         <div class="col-md-6 col-print-6">
             <h1>{{ name }}<br/>{{ title }}</h1>
             <p>
-                <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
+                <time datetime="{{ buildinfo.date }}" class="text-muted">Last updated: {{ updated }}</time>
             </p>
             <p>
-                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF version</a></span>
-                <span class="print">The online version is available at <a href="{{ baseUrl }}" class="text-nowrap"><i
+                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF Version</a></span>
+                <span class="print">Online Version <a href="{{ baseUrl }}" class="text-nowrap"><i
                     class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
             </p>
         </div>
@@ -44,22 +44,21 @@
         </div>
         {{/each}}
     </div>
-
+    <!--
     <p>
-        English poet, playwright and actor, widely regarded as the greatest writer in the English language
-        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-        two long narrative poems and a few other verses, some of uncertain authorship.
+        機械学習とデータ解析とともにSwift/Flutter/Dart環境でアプリ開発の経験ももっています。機械学習のモデル構築からクラウドサービスを利用して、アプリまでに結果を反映させる
+        実務経験がありますので、これからの仕事に活かして行きたいと思います。
     </p>
+    -->
 
     <h2>Professional Experience</h2>
-    {{#each plays}}
+    {{#each projects}}
     <div class="card mb-4">
         <div class="card-body">
-            <h3>{{ title }}</h3>
+            <h3>{{ title }},<small> HyperCube Ltd.</small></h3>
             <p class="text-muted">{{ written }}</p>
 
-            {{{markdown contents }}}
+            <p class="card-content"> {{{markdown contents }}} </p>
 
             <div>
                 {{#each badges }}
@@ -69,13 +68,27 @@
         </div>
     </div>
     {{/each}}
+    <!--
 
-    <h2>Education</h2>
-    <p>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</p>
+    <br></br>
+    <br></br>
+    -->
+    <h2>Academic Qualifications</h2>
 
-    <h2>Additional Experience</h2>
+    <!--
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    -->
+    <p>Tohoku University<small> Sendai, Japan</small><br> MSc. Elementary Particle Physics [2018 - 2020]</p>
+    <p>Tohoku University<small> Sendai, Japan</small><br> BSc. Physics [2014 - 2018]</p>
+    <p>Tokyo University of Foreign Studies<small> Tokyo, Japan</small><br> Associate Degree, Japanese Language [2013 - 2014]</p>
 
-    {{#each experience}}
+    <h2>Research/Talks</h2>
+
+    {{#each additional_experience}}
     <div class="card mt-4">
         <div class="card-body">
             <div class="mb-2"><strong>{{ header }}</strong></div>
@@ -90,6 +103,79 @@
         </div>
     </div>
     {{/each}}
+
+    {{#each additional_experience2}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+
+            {{{markdown contents }}}
+
+            <div>
+                {{#each skills }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    <h2>Language Skills</h2>
+    {{#each languages}}
+    <div class="card mt-4">
+        <div class="card-body">
+
+            {{{markdown contents }}}
+
+        </div>
+    </div>
+    {{/each}} 
+     
+    
+
+    <!--
+    <br></br>
+    -->
+    <h2>MOOCs</h2>
+    <ul>
+        <li>
+                <a href="https://coursera.org/share/c283109e1c5c051a6edcb24e492d2f94">
+                  <span class="print">Deep Learning Specialization</span>
+                  <span class="screen">Deep Learning Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+        <li>
+                <a href="https://coursera.org/share/e986a25a15bb08045ef01c54b96b2ef3">
+                  <span class="print">Algorithm Specialization</span>
+                  <!--<span class="print">https://coursera.org/share/e986a25a15bb08045ef01c54b96b2ef3</span>-->
+                  <span class="screen">Algorithm Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+
+        <li>
+                <a href="https://coursera.org/share/b55f70f8914bae27a747483a1b72feca">
+                  <span class="print">GAN Specialization</span>
+                  <span class="screen">GAN Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+        <li>
+                <a href="https://coursera.org/share/d551c1292b10985cb36060db19ad8864">
+                  <span class="print">NLP Specialization</span>
+                  <span class="screen">NLP Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+          <br>
+            Categories: 
+            <span class="badge badge-primary">Python</span> 
+            <span class="badge badge-primary">C++</span> 
+            <span class="badge badge-primary">Algorithms</span> 
+            <span class="badge badge-primary">Deep Learning</span>
+        </li>
+    </ul>
 </div>
 </body>
 </html>
