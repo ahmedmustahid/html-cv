@@ -123,6 +123,7 @@ projects2: [
       contents: `
       English, Business Level, TOEFL iBT 110
       Japanese: Business Level
+      Bengali: Native Level
       `
     },
   ],
