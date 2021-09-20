@@ -24,6 +24,19 @@ module.exports = {
     ['Algorithms', '++++'],
     ['Data Structure', '++++'],
   ],
+
+  experiences: [
+    {
+      title: 'HyperCube Ltd.',
+      written:'April 2020 - Present',
+      header: 'Machine Learning Engineer'
+    },
+    {
+      title: 'Self employed',
+      written:'April 2020 - Present',
+      header: 'Software Engineer'
+    },
+  ],
   projects: [
     {
       title: 'NLP based Chatbot',
@@ -65,6 +78,17 @@ module.exports = {
       Constructing and deploying algorithm to detect anomalous events in video.
       Transferring the analysis data to Azure DB deployed in cloud.      `
     }
+  ],
+projects2: [
+    {
+      title: 'Memorize: A game for training memory',
+      written: 'June 2021 - Present',
+      badges: ['Swift', 'Git'],
+      contents: `
+    
+      Designing front end and game logic in Swift programming language.
+      `
+    },
   ],
   additional_experience: [
     { 

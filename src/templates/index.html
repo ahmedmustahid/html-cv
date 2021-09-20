@@ -52,6 +52,20 @@
     -->
 
     <h2>Professional Experience</h2>
+{{#each experiences}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }}</small></h3>
+
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+            <p class="text-muted">{{ written }}</p>
+
+
+            
+        </div>
+    </div>
+    {{/each}}
+    <h2>Projects</h2>
     {{#each projects}}
     <div class="card mb-4">
         <div class="card-body">
@@ -68,6 +82,25 @@
         </div>
     </div>
     {{/each}}
+
+{{#each projects2}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small> Self employed</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+
     <!--
 
     <br></br>
@@ -75,13 +108,7 @@
     -->
     <h2>Academic Qualifications</h2>
 
-    <!--
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    -->
+    
     <p>Tohoku University<small> Sendai, Japan</small><br> MSc. Elementary Particle Physics [2018 - 2020]</p>
     <p>Tohoku University<small> Sendai, Japan</small><br> BSc. Physics [2014 - 2018]</p>
     <p>Tokyo University of Foreign Studies<small> Tokyo, Japan</small><br> Associate Degree, Japanese Language [2013 - 2014]</p>
