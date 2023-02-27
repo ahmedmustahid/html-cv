@@ -33,7 +33,7 @@ module.exports = {
     },
     {
       title: 'HyperCube Ltd.',
-      written:'April 2020 - May 2022',
+      written:'April 2020 - April 2022',
       header: 'Machine Learning Engineer'
     },
     {
