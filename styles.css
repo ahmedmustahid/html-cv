@@ -11,13 +11,11 @@
         border: none;
         padding: 0.1em;
         margin: 0.1em;
-        page-break-after: avoid;
     }
 
     .card-body {
         padding: 0;
         margin: 0.1em;
-        page-break-after: avoid;
     }
 
     .card-content {
@@ -34,10 +32,11 @@
         color: blue;
         background-color: blue;
     }
-    
-    div { 
-        break-after: avoid;
+
+    div {
+        break-inside: avoid;
     }
+
 }
 
 @media not print {
