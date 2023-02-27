@@ -11,11 +11,13 @@
         border: none;
         padding: 0.1em;
         margin: 0.1em;
+        page-break-after: avoid;
     }
 
     .card-body {
         padding: 0;
         margin: 0.1em;
+        page-break-after: avoid;
     }
 
     .card-content {
@@ -31,6 +33,10 @@
     .badge-primary {
         color: blue;
         background-color: blue;
+    }
+    
+    div { 
+        break-after: avoid;
     }
 }
 
@@ -162,4 +168,5 @@ a .fa {
         break-inside: avoid;
         page-break-inside: avoid;
     }
+
 }

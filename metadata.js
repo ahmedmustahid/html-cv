@@ -26,8 +26,50 @@ module.exports = {
   ],
   projects: [
     {
+      title: '',
+      written: '',
+      badges: [],
+      contents: `
+       
+      `
+    },
+    {
+      title: '',
+      written: '',
+      badges: [],
+      contents: `
+       
+      `
+    },
+    {
+      title: '',
+      written: '',
+      badges: [],
+      contents: `
+       
+      `
+    },
+    {
+      title: '',
+      written: '',
+      badges: [],
+      contents: `
+       
+      `
+    },
+    {
+      title: '俯瞰魚眼画像における人認識',
+      written: '5月 2022 - 7月 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV'],
+      contents: `
+       
+      古典的な人認識アルゴリズムが俯瞰魚眼画像に適応できないので、角度の情報が含まれているロス関数
+      `
+    },
+
+    {
       title: 'AI チャットボットアプリ',
-      written: '6月 2021 - 現在',
+      written: '6月 2021 - 4月 2022',
       badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
 

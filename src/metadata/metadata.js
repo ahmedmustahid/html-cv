@@ -26,9 +26,14 @@ module.exports = {
   ],
 
   experiences: [
+     {
+      title: 'Sensyn Robotics',
+      written:'June 2022 - Present',
+      header: 'Machine Learning Engineer'
+    },
     {
       title: 'HyperCube Ltd.',
-      written:'April 2020 - Present',
+      written:'April 2020 - May 2022',
       header: 'Machine Learning Engineer'
     },
     {
@@ -37,10 +42,50 @@ module.exports = {
       header: 'Software Engineer'
     },
   ],
-  projects: [
+  projects0: [
+    {
+      title: 'Crack segmentation from tiles',
+      written: 'Feb 2023 - Present',
+      badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
+      contents: `
+      
+      Implementing model for crack segmentation using novel transformer based segmentation architecture
+      `
+    },
+    {
+      title: 'Analog gauge reading by computer vision',
+      written: 'November 2022 - Present',
+      badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM'],
+      contents: `
+      
+      Implemented and deployed model for analog gauge reading from web cam in Nvidia Jetson Nano
+      `
+    },
+    {
+      title: 'Extraction of information of documents using deep learning methods',
+      written: 'August 2022 - October 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV', 'Tesseract OCR'],
+      contents: `
+      
+      Extracting and organizing information from documents using deep learning
+      `
+    },
+    {
+      title: 'People detection from fish eye images',
+      written: 'May 2022 - July 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV'],
+      contents: `
+      
+      Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images.
+      `
+    },
+  ],
+
+  projects1: [
+
     {
       title: 'NLP based Chatbot',
-      written: 'June 2021 - Present',
+      written: 'June 2021 - October 2021',
       badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
       contents: `
 

@@ -52,7 +52,7 @@
     -->
 
     <h2>Professional Experience</h2>
-{{#each experiences}}
+    {{#each experiences}}
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }}</small></h3>
@@ -66,7 +66,25 @@
     </div>
     {{/each}}
     <h2>Projects</h2>
-    {{#each projects}}
+    {{#each projects0}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>Sensyn Robotics</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+   
+
+    {{#each projects1}}
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }},<small> HyperCube Ltd.</small></h3>
@@ -83,7 +101,7 @@
     </div>
     {{/each}}
 
-{{#each projects2}}
+    {{#each projects2}}
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }},<small> Self employed</small></h3>
