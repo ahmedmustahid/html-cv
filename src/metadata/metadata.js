@@ -28,7 +28,7 @@ module.exports = {
   experiences: [
      {
       title: 'Sensyn Robotics',
-      written:'June 2022 - Present',
+      written:'May 2022 - Present',
       header: 'Machine Learning Engineer'
     },
     {
