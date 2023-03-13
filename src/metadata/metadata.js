@@ -49,25 +49,28 @@ module.exports = {
       badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
       contents: `
       
-      Implementing model for crack segmentation using novel transformer based segmentation architecture
+      Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation 
+      in medicine literature
       `
     },
     {
       title: 'Analog gauge reading by computer vision',
       written: 'November 2022 - Present',
-      badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM'],
+      badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM', 'ncnn'],
       contents: `
       
-      Implemented and deployed model for analog gauge reading from web cam in Nvidia Jetson Nano
+      Constructed model for accurately reading the analog gauge by determining the position of the dial, minimum and maximum values from the face of the scale after applying 
+      perspective transformation. Squeezed the model into smaller size by quantization in C++ and then deployed it into jetson nano.
       `
     },
     {
-      title: 'Extraction of information of documents using deep learning methods',
+      title: 'Extraction of information from hand written documents using deep learning methods',
       written: 'August 2022 - October 2022',
       badges: ['Python', 'Pytorch', 'OpenCV', 'Tesseract OCR'],
       contents: `
       
-      Extracting and organizing information from documents using deep learning
+      Extracting data from tables, paragraphs, drawings etc in images of handwritten documents and serializing them into respective formats by 
+      means of a Bert based model
       `
     },
     {
@@ -76,7 +79,8 @@ module.exports = {
       badges: ['Python', 'Pytorch', 'OpenCV'],
       contents: `
       
-      Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images.
+      Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including 
+      information of angular values of slanted bounding boxes.
       `
     },
   ],
