@@ -1,17 +1,11 @@
 # The Curriculum Vitae Template
 
-You are a fantastic developer. Keep your CV on GitHub, exploiting Node.js GitHub action. Host it on GitHub Pages. Have both HTML and PDF versions automatically generated and consistent.
-
-<img src="https://raw.githubusercontent.com/dheereshagrwal/colored-icons/f926a9cacef437021842aa53029d1b73fb03de15/svg/nodejs.svg" alt="nodejs Logo" width="40" height="40" /> &nbsp; &nbsp;
-<img src="https://raw.githubusercontent.com/dheereshagrwal/colored-icons/f926a9cacef437021842aa53029d1b73fb03de15/svg/npm.svg" alt="npm Logo" width="40" height="40" /> &nbsp; &nbsp;
-<img src="https://raw.githubusercontent.com/dheereshagrwal/colored-icons/f926a9cacef437021842aa53029d1b73fb03de15/svg/html.svg" alt="html Logo" width="40" height="40" /> &nbsp; &nbsp;
-<img src="https://raw.githubusercontent.com/dheereshagrwal/colored-icons/f926a9cacef437021842aa53029d1b73fb03de15/svg/css.svg" alt="css Logo" width="40" height="40" /> &nbsp; &nbsp;
-<img src="https://raw.githubusercontent.com/dheereshagrwal/colored-icons/f926a9cacef437021842aa53029d1b73fb03de15/svg/js.svg" alt="js Logo" width="40" height="40" /> 
+You are an amazing developer. Keep your CV on GitHub. Host it on GitHub Pages. Have both HTML and PDF versions automatically generated and consistent. This is what good developers do.
 
 ## What does this project do?
 
 * Helps you to manage your CV as a web app (HTML + CSS + JS).
-* Automatically generates and publishes HTML and PDF version on every push to `main`.
+* Automatically generates and publishes HTML and PDF version on every push to `master`.
 
 Demo: [http://sneas.github.io/cv-template](http://sneas.github.io/cv-template).
 
@@ -19,16 +13,16 @@ Real world example: [http://sneas.github.io/cv](http://sneas.github.io/cv).
 
 ## Motivation
 
-GitHub Pages is probably the best place developer could store their CV. Giving a potential employer a link to your CV stored on GitHub shows your intense desire for automation and stands you out.
+GitHub Pages is probably the best place developer could store it's CV. Giving a potential employer a link to your CV stored on GitHub shows your strong desire for automation and definitely stands you out.
 
-The idea behind **The Curriculum Vitae Template** is to provide anyone with a quick solution for creating and managing CVs (both HTML and PDF versions) with the help of GitHub.
+The idea behind **The Curriculum Vitae Template** is to provide anyone a quick solution for creating and managing CV (both HTML and PDF versions) with the help of GitHub.
 
 ## Installation
 
 1. Create a new repo out of this template by clicking [this link](https://github.com/sneas/cv-template/generate).
 1. Clone the newly created repo.
 1. Install project dependencies with `npm install`.
-1. Run `npm run deploy` to initialize `gh-pages`. This is a one time action. Further deployments will be initiated by GitHub Actions on every push to `main`.
+1. Run `npm run deploy` to initialize `gh-pages`. This is a one time action. Further deployments will be initiated by GitHub Actions on every push to `master`.
 
 ## Usage
 
@@ -42,6 +36,6 @@ The idea behind **The Curriculum Vitae Template** is to provide anyone with a qu
 
 The project uses [HandlebarsJS](https://github.com/wycats/handlebars.js/) as a template engine.
 
-The main HTML template is located in [src/templates/index.html](src/templates/index.html). Metadata for the template could be found in [src/metadata/metadata.js](src/metadata/metadata.js).
+The main HTML template could be found in [src/templates/index.html](src/templates/index.html). Metadata for the template could be found in [src/metadata/metadata.js](src/metadata/metadata.js).
 
 Don't forget to update [src/assets/favicon.ico](src/assets/favicon.ico). You can generate a new favicon out of your photo with [icoconvert.com](http://icoconvert.com/).

@@ -5,116 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ name }}. {{ title }}</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <base target="_blank">
 </head>
 <body>
 <div class="container page">
-    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <div class="row">
-            <div class="col-print-6 col-12 col-md-4 d-flex justify-content-between flex-column">
-                <div>
-                    <h1 class="mb-0">{{ name }}</h1>
-                    <div class="fs-3">{{ title }}</div>
-                </div>
-                <div>
-                    <p>
-                        <time datetime="{{ buildinfo.date }}" class="small">Last update: {{ updated }}</time>
-                    </p>
-                    <p>
-                        <span class="screen"><a href="{{ pdfFileName }}"><i class="far fa-file-pdf"></i>Download PDF version</a></span>
-                        <span class="print">Up-to-date version of CV is available at <a href="{{ baseUrl }}"
-                                                                                        class="text-nowrap"><i
-                            class="fab fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 offset-lg-1 d-none d-md-block align-md-self-center text-center">
-                <img src="photo.jpg" class="rounded-circle img-fluid" alt="Personal photo">
-            </div>
-            <div class="col-print-6 col-12 col-md-5 offset-lg-1 col-lg-4">
-                <ul class="list-group list-group-flush">
-                    {{#each facts}}
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <span class="text-nowrap">{{ @key }}</span>
-                        <span class="text-nowrap">{{{ this }}}</span>
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
+    <div class="row">
+        <div class="col-md-6 col-print-6">
+            <h1>{{ name }}<br/>{{ title }}</h1>
+            <p>
+                <time datetime="{{ buildinfo.date }}" class="text-muted">更新日: {{ updated }}</time>
+            </p>
+            <p>
+                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF版 ダウンロード</a></span>
+                <span class="print">オンラインバージョン <a href="{{ baseUrl }}" class="text-nowrap"><i
+                    class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
+            </p>
+        </div>
+        <div class="col-md-6 col-print-6">
+            <dl class="row">
+                {{#each facts}}
+                <dt class="col-md-3">{{ @key }}</dt>
+                <dd class="col-md-9">{{{ this }}}</dd>
+                {{/each}}
+            </dl>
         </div>
     </div>
 
-    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h3 class="h2 screen mb-4">Skills</h3>
-        <div class="row align-items-center">
-            {{#each skills}}
-            <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
-                <small>{{ this.[0] }}</small>
-            </div>
-            <div class="col-print-1 col-3 col-md-2 col-lg-1">
-                <div class="skills">
-                    <div class="skills-bar" style="width: {{ this.[1] }}%"></div>
-                </div>
-            </div>
-            {{/each}}
+    <h3 class="screen">Skills</h3>
+    <div class="row mb-4">
+        {{#each skills}}
+        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-center">
+            <small>{{ this.[0] }}</small>
         </div>
-    </div>
-
-    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        English poet, playwright and actor, widely regarded as the greatest writer in the English language
-        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-        two long narrative poems and a few other verses, some of uncertain authorship.
-    </div>
-
-    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Professional Experience</h2>
-        {{#each positions}}
-        <div class="row d-block d-md-flex{{#unless @last}} mb-5{{/unless}}">
-            <div class="col-md-2 pt-1">
-                {{ period }}
-            </div>
-            <div class="col-md-10">
-                <h3 class="fs-4 fw-normal">{{ title }}</h3>
-
-                <div>{{{markdown contents }}}</div>
-
-                <p>
-                    {{#each skills }}
-                    <span class="badge text-body border border-1">{{ this }}</span>
-                    {{/each}}
-                </p>
-            </div>
+        <div class="col-print-1 col-3 col-md-2 col-lg-1">
+            {{ this.[1] }}
         </div>
         {{/each}}
     </div>
+    <!--
+    <p>
+        機械学習とデータ解析とともにSwift/Flutter/Dart環境でアプリ開発の経験ももっています。機械学習のモデル構築からクラウドサービスを利用して、アプリまでに結果を反映させる
+        実務経験がありますので、これからの仕事に活かして行きたいと思います。
+    </p>
+    -->
 
-    <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
-        <h2 class="mb-4">Education</h2>
-        <div>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</div>
-    </div>
+    <h2>経歴</h2>
+    {{#each experiences}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }}</small></h3>
 
-    <h2 class="mb-4">Additional Experience</h2>
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+            <p class="text-muted">{{ written }}</p>
 
-    {{#each experience}}
-    <div class="mb-4">
-        <h3 class="fs-4 fw-normal">{{ header }}</h3>
 
-        {{{markdown contents }}}
-
-        <div>
-            {{#each skills }}
-            <span class="badge text-body border border-1">{{ this }}</span>
-            {{/each}}
+            
         </div>
     </div>
     {{/each}}
+
+    <h2>プロジェクト</h2>
+    {{#each projects3}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>個人事業主</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    
+    {{#each projects0}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>Sensyn Robotics</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+
+    {{#each projects1}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small> HyperCube Ltd.</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    {{#each projects2}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>自己作成</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    <!--
+    <br></br>
+    <br></br>
+    -->
+    <h2>学歴</h2>
+
+    <!--
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    -->
+    <p>東北大学<br>修士、素粒子物理学 [2018 - 2020]</p>
+    <p>東北大学<br> 学士、物理学 [2014 - 2018]</p>
+    <p>東京外国語大学<br> 准学士、日本語 [2013 - 2014]</p>
+
+    
+    <h2>研究・学会発表</h2>
+
+    {{#each additional_experience}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+
+            {{{markdown contents }}}
+
+            <div>
+                {{#each skills }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    {{#each additional_experience2}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+
+            {{{markdown contents }}}
+
+            <div>
+                {{#each skills }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    <br></br>
+    <br></br>
+
+    <h2>言語能力</h2>
+    {{#each languages}}
+    <div class="card mt-4">
+        <div class="card-body">
+
+            {{{markdown contents }}}
+
+        </div>
+    </div>
+    {{/each}} 
+     
+    
+
+    <!--
+    <br></br>
+    -->
+    
+    <!--
+    <br></br>
+    -->
+    <h2>オンライン授業</h2>
+    <ul>
+        <li>
+                <a href="https://coursera.org/share/c283109e1c5c051a6edcb24e492d2f94">
+                  <span class="print">Deep Learning Specialization</span>
+                  <span class="screen">Deep Learning Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+        <li>
+                <a href="https://coursera.org/share/e986a25a15bb08045ef01c54b96b2ef3">
+                  <span class="print">Algorithm Specialization</span>
+                  <!--<span class="print">https://coursera.org/share/e986a25a15bb08045ef01c54b96b2ef3</span>-->
+                  <span class="screen">Algorithm Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+
+        <li>
+                <a href="https://coursera.org/share/b55f70f8914bae27a747483a1b72feca">
+                  <span class="print">GAN Specialization</span>
+                  <span class="screen">GAN Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+        <li>
+                <a href="https://coursera.org/share/d551c1292b10985cb36060db19ad8864">
+                  <span class="print">NLP Specialization</span>
+                  <span class="screen">NLP Specialization</span>
+                </a>
+            : Coursera, Stanford Online
+        </li>
+          <br>
+            Categories: 
+            <span class="badge badge-primary">Python</span> 
+            <span class="badge badge-primary">C++</span> 
+            <span class="badge badge-primary">Algorithms</span> 
+            <span class="badge badge-primary">Deep Learning</span>
+        </li>
+    </ul>
 </div>
 </body>
 </html>

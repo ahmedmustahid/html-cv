@@ -1,68 +1,180 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: 'Mustahid Ahmed',
+  title: '',
   facts: {
-    'Residence': '<a href="https://www.google.com/maps/place/London,+UK/@51.5285582,-0.2416814,11z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862"><i class="fa fa-home fact-icon"></i>London</a>',
-    'Wiki': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <i class="fa-brands fa-wikipedia-w fact-icon"></i>William_Shakespeare
+    'Residence': 'Tokyo, Japan',
+    'Nationality': 'Bangladesh',
+    'Git Profile': `<a href="https://github.com/ahmedmustahid">
+                  <span class="print">https://github.com/ahmedmustahid</span>
+                  <span class="screen">Github</span>
                 </a>`,
-    'Twitter': `<a href="https://twitter.com/shakespeare"><i class="fa-brands fa-twitter fact-icon"></i>Shakespeare</a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com"><i class="fa fa-envelope fact-icon"></i>wil64@yahoo.com</a>'
+    'Email': '<a href="mailto:amustahid25@gmail.com">amustahid25@gmail.com</a>',
   },
   skills: [
-    ['Comedy', 100],
-    ['Love', 100],
-    ['Theater', 100],
-    ['Tragedy', 100],
-    ['Poetry', 100],
-    ['Erotic', 60],
-    ['Sonnets', 100],
-    ['Plays', 100],
-    ['Writing', 100],
-    ['Directing', 80],
-    ['Literature', 100],
-    ['Influence', 100],
+    ['Python', '++++'],
+    ['C++17', '++++'],
+    ['C', '++++'],
+    ['Dart/Flutter', '++++'],
+    ['Swift', '+++'],
+    ['Azure', '+++'],
+    ['AWS', '++++'],
+    ['Statistics', '++++'],
+    ['Image Processing', '++++'],
+    ['NLP', '+++'],
+    ['Algorithms', '++++'],
+    ['Data Structure', '++++'],
   ],
-  positions: [
-    {
-      title: 'Hamlet',
-      period: 'Likely early 17th century',
-      skills: ['tragedy', 'philosophy', 'death'],
-      contents: `
-Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether it is right for him to take revenge, Hamlet, along with almost all the other major characters, is killed.
-`
+
+  experiences: [
+     {
+      title: 'Sensyn Robotics',
+      written:'May 2022 - Present',
+      header: 'Machine Learning Engineer'
     },
     {
-      title: 'Twelfth Night',
-      period: '1600 – 1601',
-      skills: ['comedy', 'love'],
-      contents: `
-Viola finds herself shipwrecked in Illyria and, assuming that her brother Sebastian has died in the wreck, disguises herself as a man to gain a position in Duke Orsino's court. Orsino sends Viola (whom he knows as Cesario) to deliver a message to his love, Olivia. Olivia, however, dislikes the Duke. She falls in love with Viola, who she thinks is a man. Eventually, Viola's brother Sebastian, who in fact was unharmed in the wreck, reappears. At a critical moment, Viola's true identity is revealed when members of the court notice the similarities between her and Sebastian. Olivia quickly falls in love with Sebastian, and Viola confesses her love for the Duke.
-`
+      title: 'HyperCube Ltd.',
+      written:'April 2020 - April 2022',
+      header: 'Machine Learning Engineer'
     },
     {
-      title: 'The Tragedy of Romeo and Juliet',
-      period: '1595–1596, with a possible early draft written in 1591',
-      skills: ['tragedy', 'death', 'love'],
+      title: 'Self employed',
+      written:'April 2020 - Present',
+      header: 'Software Engineer'
+    },
+  ],
+  projects0: [
+    {
+      title: 'Crack segmentation from tiles',
+      written: 'Feb 2023 - Present',
+      badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
       contents: `
-In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
-`
+      
+      Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation 
+      in medicine literature
+      `
+    },
+    {
+      title: 'Analog gauge reading by computer vision',
+      written: 'November 2022 - Present',
+      badges: ['Python', 'Pytorch', 'OpenCV','onnx', 'mmcv', 'Apache TVM', 'ncnn'],
+      contents: `
+      
+      Constructed model for accurately reading the analog gauge by determining the position of the dial, minimum and maximum values from the face of the scale after applying 
+      perspective transformation. Squeezed the model into smaller size by quantization in C++ and then deployed it into jetson nano.
+      `
+    },
+    {
+      title: 'Extraction of information from hand written documents using deep learning methods',
+      written: 'August 2022 - October 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV', 'Tesseract OCR'],
+      contents: `
+      
+      Extracting data from tables, paragraphs, drawings etc in images of handwritten documents and serializing them into respective formats by 
+      means of a Bert based model
+      `
+    },
+    {
+      title: 'People detection from fish eye images',
+      written: 'May 2022 - July 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV'],
+      contents: `
+      
+      Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including 
+      information of angular values of slanted bounding boxes.
+      `
+    },
+  ],
+
+  projects1: [
+
+    {
+      title: 'NLP based Chatbot',
+      written: 'June 2021 - October 2021',
+      badges: ['AWS', 'Dart/flutter', 'Swift','Docker', 'Git'],
+      contents: `
+
+      Model deployment, system design and maintenance using AWS Amplify, AWS Api Gateway, AWS Lambda, AWS Sagemaker.
+      Front and backend development using Flutter/Dart/Swift programming languages.
+      `
+    },
+    {
+      title: 'Database design and deployment',
+      written: 'March 2021 – May 2021',
+      badges: ['MySQL', 'Azure', 'Python', 'Git'],
+      contents: `
+
+      Designed MySQL database schema and deployed it in Azure. 
+      Using web application API to connect web app with the database.
+      `
+    },
+{
+      title: 'Supply Chain Optimization',
+      written: 'December 2020 - February 2021',
+      badges: ['Python', 'C++', 'Git'],
+
+      contents: `
+
+      Research on optimization problems. 
+      Using linear programming and integer programming methodologies in Gurobi Python and C++ for supply chain optimization.      `
+    },
+    {
+      title: 'Video Anomaly Detection',
+      written: 'May 2020 - November 2020 ',
+      badges: ['Python', 'OpenCV', 'PyTorch', 'MySQL', 'Azure', 'Docker', 'Git'],
+      contents: `
+
+      Research on deep learning based activity detection algorithms.
+      Constructing and deploying algorithm to detect anomalous events in video.
+      Transferring the analysis data to Azure DB deployed in cloud.      `
     }
   ],
-  experience: [
+projects2: [
     {
-      header: 'Performance',
-      skills: ['theater', 'play'],
+      title: 'Memorize: A game for training memory',
+      written: 'June 2021 - Present',
+      badges: ['Swift', 'Git'],
       contents: `
-Thousands of performances of my plays have been staged since the end of the 16th century. Many of my greatest plays were performed by the Lord Chamberlain's Men and King's Men acting companies at the [Globe](https://en.wikipedia.org/wiki/Globe_Theatre) and Blackfriars Theatres.
-`
+    
+      Designing front end and game logic in Swift programming language.
+      `
     },
-    {
-      header: 'Poetry',
-      skills: ['poetry', 'erotic'],
+  ],
+  additional_experience: [
+    { 
+      header: 'Masters Thesis：Machine Learning, Deep Learning, Data Analysis',
+      skills: ['Python', 'OpenCV', 'PyTorch', 'C++', 'Git', 'CMake'],
       contents: `
-In 1593 and 1594, when the theatres were closed because of plague, I published two narrative poems on sexual themes, Venus and Adonis and The Rape of Lucrece. I dedicated them to Henry Wriothesley, Earl of Southampton.
-`
-    }
-  ]
+
+      Simulation of particle collisions and their reaction in particle detectors using C++.
+      Desiging particle detectors using C++ framework.
+      Analyzing data read by particle detectors using machine learning and deep learning algorithms.
+      `
+    },
+
+    { 
+      header: 'Conference Presentation: Japan Physical Society Annual Meeting',
+      contents: `
+      Full Detector Simulation of Pair Monitor and Application of Machine Learning to Determine Determine Beam Size
+      Nagoya University, Nagoya, Japan [March ’20]
+      `
+    },
+    { 
+      header: 'Conference Presentation：International Workshop on Future Linear Colliders',
+      contents: `
+      Search for weakly interacting dark matter in the International Linear Collider
+      University of Texas, Arlington, Texas, USA. [Oct ’18]
+      `
+    },
+  ],
+
+  languages: [  
+    {
+      contents: `
+      English, Business Level, TOEFL iBT 110
+      Japanese: Business Level
+      Bengali: Native Level
+      `
+    },
+  ],
+
 };
