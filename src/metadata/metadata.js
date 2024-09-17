@@ -163,8 +163,7 @@ projects00: [
       badges: ['Python', 'Pytorch', 'torchserve','OCR', 'Docker', 'GCP'],
       contents: `
     
-      Collected and labelled dataset of fax documents containing tables. Implemented novel algorithm to extract its data and obtained 
-      97% accuracy.
+      Collected and labelled dataset of fax documents containing tables. Implemented novel algorithm to extract its data and obtained 97% accuracy.
       Dockerized the model and created http endpoint using torchserve. Deployed the docker container into GCP Artifact registry and created an inference endpoint.
       `
     },   

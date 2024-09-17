@@ -20,7 +20,7 @@
             <p>
                 <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF</a></span>
                 <br>
-                <span class="screen"> <a href="{{ baseUrl }}" class="text-nowrap">
+                <span class="print"> <a href="{{ baseUrl }}" class="text-nowrap">
                     <i class="fa fa-github" aria-hidden="true"></i>Online Version</a></span>
             </p>
         </div>
@@ -65,8 +65,11 @@
             
         </div>
     </div>
+    
+    <br>
+    <br>
+    
     {{/each}}
-
     <h2>Projects</h2>
     {{#each projects2}}
     <div class="card mb-4">
@@ -81,6 +84,7 @@
                 <span class="badge badge-primary">{{ this }}</span>
                 {{/each}}
             </div>
+            
         </div>
     </div>
     {{/each}}
@@ -190,8 +194,6 @@
     </div>
     {{/each}}
 
-    <br></br>
-    <br></br>
 
     <h2>Languages</h2>
     {{#each languages}}
