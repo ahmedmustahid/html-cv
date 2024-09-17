@@ -15,12 +15,13 @@
         <div class="col-md-6 col-print-6">
             <h1>Mustahid Ahmed<br/></h1>
             <p>
-                <time datetime="" class="text-muted">Last updated: March 13, 2023</time>
+                <time datetime="" class="text-muted">last updated: September 17, 2024</time>
             </p>
             <p>
-                <span class="screen"><a href="ahmedmustahid-english.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF Version</a></span>
-                <span class="print">Online Version <a href="https://ahmedmustahid.github.io/html-cv" class="text-nowrap"><i
-                    class="fa fa-github" aria-hidden="true"></i>https://ahmedmustahid.github.io/html-cv</a></span>
+                <span class="screen"><a href="mustahid-ahmed..pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF</a></span>
+                <br>
+                <span class="screen"> <a href="https://ahmedmustahid.github.io/html-cv" class="text-nowrap">
+                    <i class="fa fa-github" aria-hidden="true"></i>Online Version</a></span>
             </p>
         </div>
         <div class="col-md-6 col-print-6">
@@ -49,7 +50,7 @@
             ++++
         </div>
         <div class="col-print-1 col-3 col-md-2 col-lg-1 text-center">
-            <small>C++17</small>
+            <small>C++20</small>
         </div>
         <div class="col-print-1 col-3 col-md-2 col-lg-1">
             ++++
@@ -73,7 +74,7 @@
             +++
         </div>
         <div class="col-print-1 col-3 col-md-2 col-lg-1 text-center">
-            <small>Azure</small>
+            <small>Javscript</small>
         </div>
         <div class="col-print-1 col-3 col-md-2 col-lg-1">
             +++
@@ -100,7 +101,7 @@
             <small>NLP</small>
         </div>
         <div class="col-print-1 col-3 col-md-2 col-lg-1">
-            +++
+            ++++
         </div>
         <div class="col-print-1 col-3 col-md-2 col-lg-1 text-center">
             <small>Algorithms</small>
@@ -122,13 +123,24 @@
     </p>
     -->
 
-    <h2>Professional Experience</h2>
+    <h2>Professional Experiece</h2>
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>Pioneer Electronics</small></h3>
+
+            <div class="mb-2"><strong>Machine Learning Engineer</strong></div>
+            <p class="text-muted">July 2023 - Present</p>
+
+
+            
+        </div>
+    </div>
     <div class="card mb-4">
         <div class="card-body">
             <h3>Sensyn Robotics</small></h3>
 
             <div class="mb-2"><strong>Machine Learning Engineer</strong></div>
-            <p class="text-muted">May 2022 - Present</p>
+            <p class="text-muted">May 2022 - June 2023</p>
 
 
             
@@ -156,28 +168,49 @@
             
         </div>
     </div>
+
     <h2>Projects</h2>
     <div class="card mb-4">
         <div class="card-body">
-            <h3>Crack segmentation from tiles,<small>Sensyn Robotics</small></h3>
-            <p class="text-muted">Feb 2023 - Present</p>
+            <h3>Implemented RAG pipeline with LLM for Qualcomm SoC,<small>Pioneer Electronics</small></h3>
+            <p class="text-muted">April 2024 - August 2024</p>
 
-            <p class="card-content"> <pre><code>  Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation 
-  in medicine literature
+            <p class="card-content"> <pre><code>  Designed and implemented end to end RAG pipeline from scratch using faiss and llama.cpp. 
+  Increased RAG accuracy by choosing the correct embedding and chunk size. 
   </code></pre> </p>
 
             <div>
-                <span class="badge badge-primary">Python</span>
-                <span class="badge badge-primary">Pytorch</span>
-                <span class="badge badge-primary">OpenCV</span>
-                <span class="badge badge-primary">mmcv</span>
+                <span class="badge badge-primary">C++</span>
+                <span class="badge badge-primary">Conan</span>
+                <span class="badge badge-primary">git</span>
+                <span class="badge badge-primary">faiss</span>
+                <span class="badge badge-primary">llama.cpp</span>
             </div>
         </div>
     </div>
     <div class="card mb-4">
         <div class="card-body">
+            <h3>Designed end to end middleware system for automotive radar,<small>Pioneer Electronics</small></h3>
+            <p class="text-muted">August 2023 - March 2024</p>
+
+            <p class="card-content"> <pre><code>  Implemented API to that obtains sensor data streams and transfers them to machine learning module to deliver inference results back into an alarm sytem.
+  Implemented lock free ring buffer system that stopped data loss and enabled extremely fast inference.
+  </code></pre> </p>
+
+            <div>
+                <span class="badge badge-primary">C++</span>
+                <span class="badge badge-primary">CMake</span>
+                <span class="badge badge-primary">git</span>
+                <span class="badge badge-primary">CI/CD</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card mb-4">
+        <div class="card-body">
             <h3>Analog gauge reading by computer vision,<small>Sensyn Robotics</small></h3>
-            <p class="text-muted">November 2022 - Present</p>
+            <p class="text-muted">November 2022 - April 2023</p>
 
             <p class="card-content"> <pre><code>  Constructed model for accurately reading the analog gauge by determining the position of the dial, minimum and maximum values from the face of the scale after applying 
   perspective transformation. Squeezed the model into smaller size by quantization in C++ and then deployed it into jetson nano.
@@ -194,40 +227,7 @@
             </div>
         </div>
     </div>
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>Extraction of information from hand written documents using deep learning methods,<small>Sensyn Robotics</small></h3>
-            <p class="text-muted">August 2022 - October 2022</p>
 
-            <p class="card-content"> <pre><code>  Extracting data from tables, paragraphs, drawings etc in images of handwritten documents and serializing them into respective formats by 
-  means of a Bert based model
-  </code></pre> </p>
-
-            <div>
-                <span class="badge badge-primary">Python</span>
-                <span class="badge badge-primary">Pytorch</span>
-                <span class="badge badge-primary">OpenCV</span>
-                <span class="badge badge-primary">Tesseract OCR</span>
-            </div>
-        </div>
-    </div>
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>People detection from fish eye images,<small>Sensyn Robotics</small></h3>
-            <p class="text-muted">May 2022 - July 2022</p>
-
-            <p class="card-content"> <pre><code>  Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including 
-  information of angular values of slanted bounding boxes.
-  </code></pre> </p>
-
-            <div>
-                <span class="badge badge-primary">Python</span>
-                <span class="badge badge-primary">Pytorch</span>
-                <span class="badge badge-primary">OpenCV</span>
-            </div>
-        </div>
-    </div>
-   
 
     <div class="card mb-4">
         <div class="card-body">
@@ -264,71 +264,61 @@
             </div>
         </div>
     </div>
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>Supply Chain Optimization,<small> HyperCube Ltd.</small></h3>
-            <p class="text-muted">December 2020 - February 2021</p>
-
-            <p class="card-content"> <pre><code>  Research on optimization problems. 
-  Using linear programming and integer programming methodologies in Gurobi Python and C++ for supply chain optimization.      </code></pre> </p>
-
-            <div>
-                <span class="badge badge-primary">Python</span>
-                <span class="badge badge-primary">C++</span>
-                <span class="badge badge-primary">Git</span>
-            </div>
-        </div>
-    </div>
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>Video Anomaly Detection,<small> HyperCube Ltd.</small></h3>
-            <p class="text-muted">May 2020 - November 2020 </p>
-
-            <p class="card-content"> <pre><code>  Research on deep learning based activity detection algorithms.
-  Constructing and deploying algorithm to detect anomalous events in video.
-  Transferring the analysis data to Azure DB deployed in cloud.      </code></pre> </p>
-
-            <div>
-                <span class="badge badge-primary">Python</span>
-                <span class="badge badge-primary">OpenCV</span>
-                <span class="badge badge-primary">PyTorch</span>
-                <span class="badge badge-primary">MySQL</span>
-                <span class="badge badge-primary">Azure</span>
-                <span class="badge badge-primary">Docker</span>
-                <span class="badge badge-primary">Git</span>
-            </div>
-        </div>
-    </div>
 
     <div class="card mb-4">
         <div class="card-body">
-            <h3>Memorize: A game for training memory,<small> Self employed</small></h3>
-            <p class="text-muted">June 2021 - Present</p>
+            <h3>Designed novel algorithm for OCR of Japanese fax documents,<small>Self Employed</small></h3>
+            <p class="text-muted">Batton Ltd</p>
 
-            <p class="card-content"> <pre><code>  Designing front end and game logic in Swift programming language.
+            <p class="card-content"> <pre><code>  Collected and labelled dataset of fax documents containing tables. Implemented novel algorithm to extract its data and obtained 
+  97% accuracy.
+  Dockerized the model and created http endpoint using torchserve. Deployed the docker container into GCP Artifact registry and created an inference endpoint.
   </code></pre> </p>
 
             <div>
-                <span class="badge badge-primary">Swift</span>
-                <span class="badge badge-primary">Git</span>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">Pytorch</span>
+                <span class="badge badge-primary">torchserve</span>
+                <span class="badge badge-primary">OCR</span>
+                <span class="badge badge-primary">Docker</span>
+                <span class="badge badge-primary">GCP</span>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>Japanese kanji generation from a specific font,<small>Self Employed</small></h3>
+            <p class="text-muted">AI Idea Lab</p>
+
+            <p class="card-content"> <pre><code>  Used controlnet and prompt engineering to create Kanjis from novel fonts.
+  </code></pre> </p>
+
+            <div>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">Image Generation</span>
             </div>
         </div>
     </div>
 
-
     <!--
-
     <br></br>
     <br></br>
     -->
-    <h2>Academic Qualifications</h2>
+    <h2>Education</h2>
+
+    <!--
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    -->
+    <p>Tohoku University<br>MSc, Particle Physics [2018 - 2020]</p>
+    <p>Tohoku University<br> BSc, Physics [2014 - 2018]</p>
+    <p>Tokyo University of Foreign Studies<br> Associate Degree, Japanese [2013 - 2014]</p>
 
     
-    <p>Tohoku University<small> Sendai, Japan</small><br> MSc. Elementary Particle Physics [2018 - 2020]</p>
-    <p>Tohoku University<small> Sendai, Japan</small><br> BSc. Physics [2014 - 2018]</p>
-    <p>Tokyo University of Foreign Studies<small> Tokyo, Japan</small><br> Associate Degree, Japanese Language [2013 - 2014]</p>
-
-    <h2>Research/Talks</h2>
+    <h2>Research</h2>
 
     <div class="card mt-4">
         <div class="card-body">
@@ -375,7 +365,10 @@
     </div>
 
 
-    <h2>Language Skills</h2>
+    <br></br>
+    <br></br>
+
+    <h2>Languages</h2>
     <div class="card mt-4">
         <div class="card-body">
 
@@ -389,6 +382,10 @@
      
     
 
+    <!--
+    <br></br>
+    -->
+    
     <!--
     <br></br>
     -->
@@ -424,6 +421,7 @@
                 </a>
             : Coursera, Stanford Online
         </li>
+          <br>
             Categories: 
             <span class="badge badge-primary">Python</span> 
             <span class="badge badge-primary">C++</span> 
