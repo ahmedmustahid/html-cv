@@ -177,15 +177,39 @@ projects00: [
       `
     },
 
-    // {
-    //   title: 'Memorize: A game for training memory',
-    //   written: 'June 2021 - Sep 2021',
-    //   badges: ['Swift', 'Git'],
-    //   contents: `
+    {
+      title: 'GPT based AI Callerbot',
+      written: 'AI Idea Lab',
+      badges: ['Python', 'Node.js'],
+      contents: `
     
-    //   Designing front end and game logic in Swift programming language.
-    //   `
-    // },
+      Converting caller's speech into text and using prompt engineering to obtain the best output from Open AI api.
+      Converting the api response into voice. Exchange the generated voice from python to node.js using WebRTC. 
+      `
+    },
+ 
+
+    {
+      title: 'Memorize: A game for training memory',
+      written: 'June 2021 - Sep 2021',
+      badges: ['Swift', 'Git'],
+      contents: `
+    
+      Designing front end and game logic in Swift programming language.
+      `
+    },
+
+    {
+      title: 'amusta-chain: A distributed peer to peer blockchain',
+      written: 'June 2021 - Sep 2021',
+      badges: ['javascript', 'Git'],
+      contents: `
+    
+      p2p mining; Implementing transfer of currencies to user wallets;
+      Validation of transactions by miners.
+      `
+
+    }
   ],
   additional_experience: [
     { 
