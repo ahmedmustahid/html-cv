@@ -54,8 +54,9 @@ module.exports = {
       written: 'April 2024 - August 2024',
       badges: ['C++', 'Conan', 'git', 'faiss', 'llama.cpp'],
       contents: `
-      Designed and implemented end to end RAG pipeline from scratch using faiss and llama.cpp. 
-      Increased RAG accuracy by choosing the correct embedding and chunk size. 
+      Designed and implemented end to end RAG pipeline from scratch using faiss and llama.cpp.
+      Created separate library for RAG after deriving llama and embeddings from llama.cpp.
+      Implemented build system using Conan. CI CD using github action. 
       `
     },
     {
@@ -65,7 +66,7 @@ module.exports = {
       contents: `
       
       Implemented API to that obtains sensor data streams and transfers them to machine learning module to deliver inference results back into an alarm sytem.
-      Implemented lock free ring buffer system that stopped data loss and enabled extremely fast inference.
+      Implemented lock free ring buffer system that stopped data loss and enabled extremely fast inference. Employed unit tests and CI CD.
       `
     },
   ],
@@ -164,7 +165,8 @@ projects00: [
       contents: `
     
       Collected and labelled dataset of fax documents containing tables. Implemented novel algorithm to extract its data and obtained 97% accuracy.
-      Dockerized the model and created http endpoint using torchserve. Deployed the docker container into GCP Artifact registry and created an inference endpoint.
+      Dockerized the model and created http endpoint using torchserve. Deployed the docker container into GCP Artifact registry and created 
+      inference endpoint through Vertex AI endpoint.
       `
     },   
     {
@@ -192,7 +194,7 @@ projects00: [
     {
       title: 'Memorize: A game for training memory',
       written: 'June 2021 - Sep 2021',
-      badges: ['Swift', 'Git'],
+      badges: ['Swift', 'Git', 'CI/CD'],
       contents: `
     
       Designing front end and game logic in Swift programming language.
@@ -202,9 +204,9 @@ projects00: [
     {
       title: 'amusta-chain: A distributed peer to peer blockchain',
       written: 'June 2021 - Sep 2021',
-      badges: ['javascript', 'Git'],
+      badges: ['javascript', 'Express', 'Node.js', 'Git', 'CI/CD'],
       contents: `
-    
+      Emplyed end to end TDD.
       p2p mining; Implementing transfer of currencies to user wallets;
       Validation of transactions by miners.
       `
