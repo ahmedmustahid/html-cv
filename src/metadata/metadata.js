@@ -42,6 +42,16 @@ module.exports = {
       header: 'Machine Learning Engineer'
     },
     {
+      title: 'Batton Ltd.',
+      written:'Aug 2023 - Dec 2023',
+      header: 'Machine Learning Engineer (Freelance)'
+    },
+    {
+      title: 'AI Idea Lab Ltd.',
+      written:'April 2023 - Dec 2023',
+      header: 'Machine Learning Engineer (Freelance)'
+    },
+    {
       title: 'Self employed',
       written:'April 2020 - Present',
       header: 'Software Engineer'
@@ -72,16 +82,16 @@ module.exports = {
   ],
 
   projects1: [
-    // {
-    //   title: 'Crack segmentation from tiles',
-    //   written: 'Feb 2023 - Present',
-    //   badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
-    //   contents: `
+    {
+      title: 'Crack segmentation from tiles',
+      written: 'Feb 2023 - April 2023',
+      badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
+      contents: `
       
-    //   Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation 
-    //   in medicine literature
-    //   `
-    // },
+      Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation 
+      in medicine literature
+      `
+    },
     {
       title: 'Analog gauge reading by computer vision',
       written: 'November 2022 - April 2023',
@@ -102,16 +112,16 @@ module.exports = {
     //   means of a Bert based model
     //   `
     // },
-    // {
-    //   title: 'People detection from fish eye images',
-    //   written: 'May 2022 - July 2022',
-    //   badges: ['Python', 'Pytorch', 'OpenCV'],
-    //   contents: `
+    {
+      title: 'People detection from fish eye images',
+      written: 'May 2022 - July 2022',
+      badges: ['Python', 'Pytorch', 'OpenCV'],
+      contents: `
       
-    //   Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including 
-    //   information of angular values of slanted bounding boxes.
-    //   `
-    // },
+      Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including 
+      information of angular values of slanted bounding boxes.
+      `
+    },
   ],
 
   projects0: [
@@ -157,10 +167,10 @@ module.exports = {
     //   Transferring the analysis data to Azure DB deployed in cloud.      `
     // }
   ],
-projects00: [
+  projects01: [
     {
       title: 'Designed novel algorithm for OCR of Japanese fax documents',
-      written: 'Batton Ltd',
+      written: 'Aug 2023 - Dec 2023',
       badges: ['Python', 'Pytorch', 'torchserve','OCR', 'Docker', 'GCP'],
       contents: `
     
@@ -168,14 +178,19 @@ projects00: [
       Dockerized the model and created http endpoint using torchserve. Deployed the docker container into GCP Artifact registry and created 
       inference endpoint through Vertex AI endpoint.
       `
-    },   
+    },  
+  ],
+  projects02: [   
     {
       title: 'Japanese kanji generation from a specific font',
-      written: 'AI Idea Lab',
-      badges: ['Python', 'Image Generation'],
+      written: 'April 2023 - Dec 2023',
+      badges: ['Python', 'Image Generation', 'FastApi', 'Gradio'],
       contents: `
     
       Used controlnet and prompt engineering to create Kanjis from novel fonts.
+      Creating frontend using Gradio.
+      Creating fastapi endpoint.
+      Connecting gradio frontend with fast api
       `
     },
 
@@ -189,8 +204,9 @@ projects00: [
       Converting the api response into voice. Exchange the generated voice from python to node.js using WebRTC. 
       `
     },
+  ],
  
-
+projects00: [ 
     {
       title: 'Memorize: A game for training memory',
       written: 'June 2021 - Sep 2021',

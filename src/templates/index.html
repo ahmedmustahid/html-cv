@@ -122,6 +122,40 @@
     </div>
     {{/each}}
 
+    {{#each projects01}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>Batton Ltd.</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+    {{#each projects02}}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>{{ title }},<small>AI Idea Lab Ltd.</small></h3>
+            <p class="text-muted">{{ written }}</p>
+
+            <p class="card-content"> {{{markdown contents }}} </p>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
     {{#each projects00}}
     <div class="card mb-4">
         <div class="card-body">
