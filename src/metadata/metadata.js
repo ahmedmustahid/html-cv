@@ -183,7 +183,7 @@ module.exports = {
   projects02: [   
     {
       title: 'Japanese kanji generation from a specific font',
-      written: 'April 2023 - Dec 2023',
+      written: 'April 2023 - Sep 2023',
       badges: ['Python', 'Image Generation', 'FastApi', 'Gradio'],
       contents: `
     
@@ -196,7 +196,7 @@ module.exports = {
 
     {
       title: 'GPT based AI Callerbot',
-      written: 'AI Idea Lab',
+      written: 'Oct 2023 - Dec 2023',
       badges: ['Python', 'Node.js'],
       contents: `
     
