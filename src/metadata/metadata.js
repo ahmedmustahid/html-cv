@@ -88,8 +88,7 @@ module.exports = {
       badges: ['Python', 'Pytorch', 'OpenCV', 'mmcv'],
       contents: `
       
-      Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation 
-      in medicine literature
+      Implementing model for crack segmentation using novel transformer based segmentation architecture inspired from retinal vessel segmentation in medicine literature.  Implemented continual learning system based on labelling->training cycle. Obtained high precision of 0.9 and recall of 0.8.
       `
     },
     {
@@ -99,7 +98,8 @@ module.exports = {
       contents: `
       
       Constructed model for accurately reading the analog gauge by determining the position of the dial, minimum and maximum values from the face of the scale after applying 
-      perspective transformation. Squeezed the model into smaller size by quantization in C++ and then deployed it into jetson nano.
+      perspective transformation. Minimized expected error rate to 0.15%.
+      Squeezed the model into smaller size by quantization in C++ using TVM. Deployed it into edge device (NVIDIA jetson nano).
       `
     },
     // {
@@ -115,11 +115,11 @@ module.exports = {
     {
       title: 'People detection from fish eye images',
       written: 'May 2022 - July 2022',
-      badges: ['Python', 'Pytorch', 'OpenCV'],
+      badges: ['Python', 'Pytorch', 'OpenCV', 'AWS'],
       contents: `
       
-      Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including 
-      information of angular values of slanted bounding boxes.
+      Because commonly used algorithms are not suitable for fish eye images, implemented new algorithm that can detect people in such images by including information of angular values of slanted bounding boxes. Implemented labelling to storage in cloud pipeline by connecting CoCo Annotator to AWS S3. Obtained a high mAP score, on par with state of the art YOLO algorithms.
+
       `
     },
   ],
@@ -197,11 +197,12 @@ module.exports = {
     {
       title: 'GPT based AI Callerbot',
       written: 'Oct 2023 - Dec 2023',
-      badges: ['Python', 'Node.js'],
+      badges: ['Python', 'Node.js', 'WebRTC'],
       contents: `
     
       Converting caller's speech into text and using prompt engineering to obtain the best output from Open AI api.
-      Converting the api response into voice. Exchange the generated voice from python to node.js using WebRTC. 
+      Converting the api response into voice. Create WebRTC bridge between python and node js.
+      This system is currently being deployed into the company app.
       `
     },
   ],
