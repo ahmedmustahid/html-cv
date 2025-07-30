@@ -69,7 +69,7 @@ module.exports = {
       title: 'Financial AI Multi-Agent System',
       written: 'April 2025 - Present',
       badges: ['Python', 'FastAPI', 'LangChain', 'LangGraph', 'OpenAI API', 'PostgreSQL', 'Pandas', 'Matplotlib', 'Docker'],
-      contents: `Developed a sophisticated multi-agent AI system for financial data analysis and document processing using LangGraph orchestration framework. Built a scalable FastAPI backend integrating specialized AI agents for SQL query execution, PDF document retrieval, data visualization, and intelligent request routing. Implemented agentic RAG (Retrieval-Augmented Generation) capabilities with multilingual support (English/Japanese) for financial document analysis.
+      contents: `Developed a sophisticated multi-agent AI system for financial data analysis and document processing using LangGraph orchestration framework. Built a scalable FastAPI backend integrating specialized AI agents for SQL query execution, PDF document retrieval, data visualization, and intelligent request routing. Implemented agentic capabilities with multilingual support (English/Japanese) for financial document analysis.
 
 **Key Contributions:**
 
