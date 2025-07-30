@@ -110,7 +110,7 @@ module.exports = {
 **Key contributions:**
 
 - Implemented Azure OpenAI SDK integration with configurable model endpoints and API versions
-- Added Streamable HTTP transport support with configurable host/port parameters (localhost:8000 default)
+- Added Streamable HTTP transport support with configurable host/port parameters 
 - Enabled llama-cpp-python local model support for running models locally
 - Integrated SQLite database backend with configurable dialect and database path
 - Enhanced configuration system with comprehensive YAML-based setup

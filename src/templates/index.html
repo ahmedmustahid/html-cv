@@ -29,10 +29,16 @@
             </div>
             <div class="col-md-6 col-print-6">
                 <dl class="row">
-                    {{#each facts}}
-                    <dt class="col-md-3">{{ @key }}</dt>
-                    <dd class="col-md-9">{{{ this }}}</dd>
-                    {{/each}}
+                    <dt class="col-md-3"><i class="fa fa-map-marker" aria-hidden="true"></i> Residence</dt>
+                    <dd class="col-md-9">{{{ facts.Residence }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-flag" aria-hidden="true"></i> Nationality</dt>
+                    <dd class="col-md-9">{{{ facts.Nationality }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-github" aria-hidden="true"></i> Git Profile</dt>
+                    <dd class="col-md-9">{{{ facts.[Git Profile] }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-envelope" aria-hidden="true"></i> Email</dt>
+                    <dd class="col-md-9">{{{ facts.Email }}}</dd>
+                    <dt class="col-md-3"><i class="fa fa-globe" aria-hidden="true"></i> Website</dt>
+                    <dd class="col-md-9">{{{ facts.Website }}}</dd>
                 </dl>
             </div>
         </div>
