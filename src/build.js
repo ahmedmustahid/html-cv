@@ -32,6 +32,7 @@ fs.writeFileSync(outputDir + '/index.html', html);
 
 buildPdf = async function (inputFile, outputFile) {
   const browser = await Puppeteer.launch({
+        executablePath: process.platform === 'darwin' ? '/opt/homebrew/bin/chromium' : undefined,
         args: [
             '--no-sandbox',
             '--disable-setuid-sandbox'
