@@ -105,7 +105,7 @@ module.exports = {
       written: 'January 2025',
       badges: ['Python', 'Azure OpenAI', 'llama-cpp-python', 'SQLite', 'Streamable HTTP', 'MCP Protocol'],
       github: 'https://github.com/ahmedmustahid/xiyan_mcp_server',
-      contents: `Contributed to xiyan_mcp_server project by implementing comprehensive Azure OpenAI integration and enhancing local model support through llama-cpp-python. Enabled Streamable HTTP transport protocol and integrated SQLite database support.
+      contents: `Contributed to xiyan mcp server project by implementing comprehensive Azure OpenAI integration and enhancing local model support through llama-cpp-python. Enabled Streamable HTTP transport protocol and integrated SQLite database support.
 
 **Key contributions:**
 
