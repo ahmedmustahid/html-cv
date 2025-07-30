@@ -18,7 +18,7 @@ module.exports = {
     ["C", "++++"],
     ["Dart/Flutter", "++++"],
     ["Swift", "+++"],
-    ["Javscript", "+++"],
+    ["Typescript", "+++"],
     ["AWS", "++++"],
     ["Statistics", "++++"],
     ["Image Processing", "++++"],
@@ -97,15 +97,7 @@ module.exports = {
     {
       title: "PostgreSQL MCP Server: Dual Transport & Database Integration",
       written: "January 2025",
-      badges: [
-        "Python",
-        "PostgreSQL",
-        "MCP Protocol",
-        "HTTP",
-        "Stdio",
-        "Docker",
-        "FastAPI",
-      ],
+      badges: ["Typescript", "PostgreSQL", "MCP Protocol", "Docker"],
       github: "https://github.com/ahmedmustahid/postgres-mcp-server/",
       contents: `Developed a production-ready PostgreSQL MCP (Model Context Protocol) server with dual transport support (HTTP and Stdio). Featured in [MCP official repository](https://github.com/modelcontextprotocol/servers).
 
